@@ -2,6 +2,11 @@ var express = require("express");
 var router = express.Router();
 
 module.exports = function (db) {
+
+ /*  router.get("/products", (_req, res) => {
+    res.send(db.get("products").value())
+  }) */
+
   router
     .route("/products")
     .get((req, res) => {
